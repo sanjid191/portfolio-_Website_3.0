@@ -1,0 +1,27 @@
+/* Minimal reset - App.css handles all styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Mobile: Allow scrolling */
+@media (max-width: 768px) {
+  html, body, #root {
+    overflow-y: auto;
+    height: auto;
+    min-height: 100%;
+  }
+}
