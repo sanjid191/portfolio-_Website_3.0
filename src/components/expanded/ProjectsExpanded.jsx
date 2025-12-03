@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
-import { HiAcademicCap, HiChartBar, HiCheckCircle, HiPaintBrush, HiCloud, HiDevicePhoneMobile, HiXMark, HiArrowLeft, HiChevronLeft, HiChevronRight, HiStar, HiEye, HiCodeBracket } from 'react-icons/hi2'
+import { HiArchive, HiClipboardCheck } from 'react-icons/hi'
+import { HiAcademicCap, HiChartBar, HiCheckCircle, HiPaintBrush, HiCloud, HiArrowLeft, HiChevronLeft, HiChevronRight, HiCodeBracket, HiCalculator, HiPlay } from 'react-icons/hi2'
 
 function ProjectsExpanded({ onClose }) {
   const [selectedProject, setSelectedProject] = useState(null)
@@ -24,8 +25,7 @@ function ProjectsExpanded({ onClose }) {
         'src/assets/Project Screenshots/Green_Fest_2 (3).png',
         'src/assets/Project Screenshots/Green_Fest_2 (4).png'
       ],
-      features: ['Event Schedule', 'Guest Speakers', 'Activity Listings', 'Registration Portal', 'Real-time Updates', 'Responsive Design', 'Photo Gallery', 'Contact Information'],
-      stats: { stars: 128, views: 2340 }
+      features: ['Event Schedule', 'Guest Speakers', 'Activity Listings', 'Registration Portal', 'Real-time Updates', 'Responsive Design', 'Photo Gallery', 'Contact Information']
     },
     {
       title: 'Path2Pro: Academic and Skill Development Platform',
@@ -35,7 +35,7 @@ function ProjectsExpanded({ onClose }) {
       icon: <HiAcademicCap size={32} />,
       color: '#667eea',
       github: 'https://github.com/msahid-cse/Path2Pro1.0',
-      live: 'https://example.com',
+      live: 'https://github.com/sanjid191',
       featured: true,
       thumbnail: 'src/assets/Project Thumbnail/Path2Pro.jpg',
       screenshots: [
@@ -46,8 +46,7 @@ function ProjectsExpanded({ onClose }) {
         'src/assets/Project Screenshots/R2P-5.png',
         'src/assets/Project Screenshots/R2P-6.png'
       ],
-      features: ['Resource Library', 'Skill Development', 'CV Services', 'Feedback Portal', 'Notice Board', 'Course Management', 'Gradebook', 'User Management'],
-      stats: { stars: 128, views: 2340 }
+      features: ['Resource Library', 'Skill Development', 'CV Services', 'Feedback Portal', 'Notice Board', 'Course Management', 'Gradebook', 'User Management']
     },
     {
       title: 'Employee Management System (Java)',
@@ -57,7 +56,7 @@ function ProjectsExpanded({ onClose }) {
       icon: <HiChartBar size={32} />,
       color: '#f59e0b',
       github: 'https://github.com/sanjid191/Employee_Management_System_with_GUI_and_MySQL',
-      live: 'https://example.com',
+      live: 'https://github.com/sanjid191',
       featured: true,
       thumbnail: 'src/assets/Project Thumbnail/EMS_Java_Swing.jpg',
       screenshots: [
@@ -68,68 +67,66 @@ function ProjectsExpanded({ onClose }) {
         'src/assets/Project Screenshots/EMP_Java_swing (5).png',
         'src/assets/Project Screenshots/EMP_Java_swing (6).png'
       ],
-      features: ['GUI Interface', 'MySQL Integration', 'Add/Edit/Delete Records', 'View Employee Profiles', 'Dual-view Login', 'Role-based Access', 'Data Validation', 'Search & Filter'],
-      stats: { stars: 256, views: 4520 }
+      features: ['GUI Interface', 'MySQL Integration', 'Add/Edit/Delete Records', 'View Employee Profiles', 'Dual-view Login', 'Role-based Access', 'Data Validation', 'Search & Filter']
     },
     {
       title: 'CryptoVisualizer',
       description: 'An interactive platform to demystify cryptography principles with visual representations of encryption and decryption.',
       fullDescription: 'The CryptoVisualizer is an interactive platform designed to demystify the principles of cryptography by providing a practical, visual representation of various cryptographic methods. In an era where data security is paramount, this platform seeks to enhance the understanding of encryption and decryption mechanisms, making cryptography accessible to learners, professionals, and enthusiasts alike.',
       tags: ['HTML', 'CSS', 'JavaScript'],
-      icon: <HiCheckCircle size={32} />,
+      icon: <HiClipboardCheck size={32} />,
       color: '#10b981',
       github: 'https://github.com/sanjid191/CryptoVisualizer',
       live: 'https://cryptovisualizer.netlify.app/',
       featured: false,
       thumbnail: 'src/assets/Project Thumbnail/CryptoVisualizer.jpg',
       screenshots: [
-        'src/assets/Project Thumbnail/CryptoVisualizer.jpg',
-        'src/assets/Project Thumbnail/CryptoVisualizer.jpg',
-        'src/assets/Project Thumbnail/CryptoVisualizer.jpg',
-        'src/assets/Project Thumbnail/CryptoVisualizer.jpg'
+        'src/assets/Project Screenshots/1.png',
+        'src/assets/Project Screenshots/2.png',
+        'src/assets/Project Screenshots/3.png',
+        'src/assets/Project Screenshots/4.png',
+        'src/assets/Project Screenshots/5.png'
       ],
-      features: ['Interactive Visualizations', 'Real-time Animations', 'AES/RSA/DES Algorithms', 'User-friendly Interface', 'Side-by-side Comparison', 'Step-by-step Breakdown', 'Cryptanalysis Tools', 'Educational Content'],
-      stats: { stars: 89, views: 1890 }
+      features: ['Interactive Visualizations', 'Real-time Animations', 'AES/RSA/DES Algorithms', 'User-friendly Interface', 'Side-by-side Comparison', 'Step-by-step Breakdown', 'Cryptanalysis Tools', 'Educational Content']
     },
     {
       title: 'CGPA Calculator',
       description: 'A user-friendly tool to calculate CGPA and GPA scores for students with instant semester calculations.',
       fullDescription: 'Stuck juggling grades and semester averages? This website simplifies student life with a user-friendly CGPA calculator. Input your course credits and grades, and it will instantly calculate your semester GPA and overall CGPA. No more manual calculations - this tool keeps you informed of your academic standing and even estimates your graduation class (at some universities). Focus on your studies, let the website handle the number crunching.',
       tags: ['HTML', 'CSS', 'JavaScript'],
-      icon: <HiPaintBrush size={32} />,
+      icon: <HiCalculator size={32} />,
       color: '#ec4899',
       github: 'https://github.com/sanjid191/CGPA-calculation',
       live: 'https://cgpacalculationgub.netlify.app/',
       featured: false,
       thumbnail: 'src/assets/Project Thumbnail/CGPA_Calculator.jpg',
       screenshots: [
-        'src/assets/Project Thumbnail/CGPA_Calculator.jpg',
-        'src/assets/Project Thumbnail/CGPA_Calculator.jpg',
-        'src/assets/Project Thumbnail/CGPA_Calculator.jpg',
-        'src/assets/Project Thumbnail/CGPA_Calculator.jpg'
+        'src/assets/Project Screenshots/CGPAC-01.png',
+        'src/assets/Project Screenshots/CGPAC-02.png',
+        'src/assets/Project Screenshots/CGPAC-03.png',
+        'src/assets/Project Screenshots/CGPAC-04.png'
       ],
-      features: ['User-friendly Interface', 'Instant GPA Calculation', 'Overall CGPA Tracking', 'Graduation Class Estimation', 'Real-time Updates', 'Simplified Input System', 'Error Elimination', 'Academic Standing'],
-      stats: { stars: 167, views: 3210 }
+      features: ['User-friendly Interface', 'Instant GPA Calculation', 'Overall CGPA Tracking', 'Graduation Class Estimation', 'Real-time Updates', 'Simplified Input System', 'Error Elimination', 'Academic Standing']
     },
     {
       title: '2D Robot Soccer Simulation',
       description: 'A fun and engaging simulation of robot soccer matches using Python with AI-powered decision making.',
       fullDescription: 'This project presents a comprehensive Robot Soccer Simulation, where two teams of robots (Blue and Red) compete in a virtual soccer match. The simulation is designed to demonstrate the integration of artificial intelligence, real-time graphics, and multi-agent pathfinding. It features realistic ball physics, robot movement using the A* pathfinding algorithm, and interactive user controls. The simulation is both an educational tool and a platform for experimenting with robotics and AI concepts.',
       tags: ['Python', 'Pygame', 'Matplotlib', 'NumPy'],
-      icon: <HiCloud size={32} />,
+      icon: <HiPlay size={32} />,
       color: '#06b6d4',
       github: 'https://github.com/sanjid191/Simple_2D_Robot_Soccer_Simulation',
       live: 'https://example.com',
       featured: false,
       thumbnail: 'src/assets/Project Thumbnail/2D Robot Soccer Simulation (Lightweight).jpg',
       screenshots: [
-        'src/assets/Project Thumbnail/2D Robot Soccer Simulation (Lightweight).jpg',
-        'src/assets/Project Thumbnail/2D_C.png',
-        'src/assets/Project Thumbnail/2D Robot Soccer Simulation (Lightweight).jpg',
-        'src/assets/Project Thumbnail/2D_C.png'
+        'src/assets/Project Screenshots/2DSG-1.png',
+        'src/assets/Project Screenshots/2DSG-2.png',
+        'src/assets/Project Screenshots/2DSG-3.png',
+        'src/assets/Project Screenshots/2DSG-4.png',
+        'src/assets/Project Screenshots/2DSG-5.png'
       ],
-      features: ['Two-team Simulation', 'AI Decision Making', 'Real-time 2D Graphics', 'A* Pathfinding', 'Ball Physics', 'Collision Detection', 'Interactive Controls', 'Educational Tool'],
-      stats: { stars: 203, views: 4120 }
+      features: ['Two-team Simulation', 'AI Decision Making', 'Real-time 2D Graphics', 'A* Pathfinding', 'Ball Physics', 'Collision Detection', 'Interactive Controls', 'Educational Tool']
     },
     {
       title: 'Archive portfolio websites',
@@ -141,7 +138,7 @@ function ProjectsExpanded({ onClose }) {
         { name: "Let's Print", link: '#' }
       ],
       tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'React', 'Tailwind CSS'],
-      icon: <HiCloud size={32} />,
+      icon: <HiArchive size={32} />,
       color: '#06b6d4',
       github: 'https://github.com/sanjid191',
       live: 'https://github.com/sanjid191',
@@ -151,8 +148,7 @@ function ProjectsExpanded({ onClose }) {
         'src/assets/Project Screenshots/PW1.png',
         'src/assets/Project Screenshots/PW2.png'
       ],
-      features: ['Version 1: Basic HTML/CSS', 'Version 2: Bootstrap Integration',  'Version 3: React Implementation','Tailwind CSS Styling', 'Responsive Design', 'Project Showcases', 'Contact Information'],
-      stats: { stars: 203, views: 4120 }
+      features: ['Version 1: Basic HTML/CSS', 'Version 2: Bootstrap Integration',  'Version 3: React Implementation','Tailwind CSS Styling', 'Responsive Design', 'Project Showcases', 'Contact Information']
     }
   ]
 
@@ -200,10 +196,6 @@ function ProjectsExpanded({ onClose }) {
               </div>
               <div className="project-detail-title">
                 <h1>{selectedProject.title}</h1>
-                <div className="project-stats">
-                  <span><HiStar size={16} /> {selectedProject.stats.stars} Stars</span>
-                  <span><HiEye size={16} /> {selectedProject.stats.views} Views</span>
-                </div>
               </div>
               <div className="project-detail-actions">
                 <a href={selectedProject.github} target="_blank" rel="noopener noreferrer" className="action-btn github">
@@ -326,10 +318,6 @@ function ProjectsExpanded({ onClose }) {
                   </div>
 
                   <div className="project-card-bottom">
-                    <div className="project-stats-small">
-                      <span><HiStar size={14} /> {project.stats.stars}</span>
-                      <span><HiEye size={14} /> {project.stats.views}</span>
-                    </div>
                     <div className="project-links" onClick={(e) => e.stopPropagation()}>
                       <a href={project.github} target="_blank" rel="noopener noreferrer" title="View Code">
                         <FaGithub size={18} />
