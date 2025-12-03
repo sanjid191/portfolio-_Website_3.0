@@ -8,6 +8,26 @@ function ProjectsExpanded({ onClose }) {
 
   const projects = [
     {
+      title: 'Green Fest 2.0: Offical Event Website',
+      description: 'The official website for Green Fest 2.0, a festival organized by Green University of Bangladesh.',
+      fullDescription: 'Green Fest 2.0 is the official event website for the annual festival organized by Green University of Bangladesh. The website serves as a comprehensive platform to provide information about the event, including schedules, activities, guest speakers, and registration details. It aims to enhance the overall experience for attendees by offering easy access to event-related information and updates.',
+      tags: ['React', 'MongoDB',],
+      icon: <HiAcademicCap size={32} />,
+      color: '#667eea',
+      github: 'https://github.com/sanjid191/Green_Fest_2.0_React_Application',
+      live: 'https://greenfest.green.edu.bd/',
+      featured: true,
+      thumbnail: 'src/assets/Project Thumbnail/GF2.png',
+      screenshots: [
+        'src/assets/Project Screenshots/Green_Fest_2 (1).png',
+        'src/assets/Project Screenshots/Green_Fest_2 (2).png',
+        'src/assets/Project Screenshots/Green_Fest_2 (3).png',
+        'src/assets/Project Screenshots/Green_Fest_2 (4).png'
+      ],
+      features: ['Event Schedule', 'Guest Speakers', 'Activity Listings', 'Registration Portal', 'Real-time Updates', 'Responsive Design', 'Photo Gallery', 'Contact Information'],
+      stats: { stars: 128, views: 2340 }
+    },
+    {
       title: 'Path2Pro: Academic and Skill Development Platform',
       description: 'A comprehensive online platform designed to revolutionize the educational experience with course management, skill development, and CV services.',
       fullDescription: 'The Path2Pro is a comprehensive online platform designed to revolutionize the educational experience. It serves as a centralized hub for students, faculty, and staff, offering a wide range of features to enhance learning, foster collaboration, and streamline administrative processes. The platform aims to create a dynamic and engaging learning environment that empowers students to succeed academically and professionally.',
@@ -19,10 +39,12 @@ function ProjectsExpanded({ onClose }) {
       featured: true,
       thumbnail: 'src/assets/Project Thumbnail/Path2Pro.jpg',
       screenshots: [
-        'src/assets/Project Thumbnail/Path2Pro.jpg',
-        'src/assets/Project Thumbnail/Path2Pro.jpg',
-        'src/assets/Project Thumbnail/Path2Pro.jpg',
-        'src/assets/Project Thumbnail/Path2Pro.jpg'
+        'src/assets/Project Screenshots/R2P-1.png',
+        'src/assets/Project Screenshots/R2P-2.png',
+        'src/assets/Project Screenshots/R2P-3.png',
+        'src/assets/Project Screenshots/R2P-4.png',
+        'src/assets/Project Screenshots/R2P-5.png',
+        'src/assets/Project Screenshots/R2P-6.png'
       ],
       features: ['Resource Library', 'Skill Development', 'CV Services', 'Feedback Portal', 'Notice Board', 'Course Management', 'Gradebook', 'User Management'],
       stats: { stars: 128, views: 2340 }
@@ -39,10 +61,12 @@ function ProjectsExpanded({ onClose }) {
       featured: true,
       thumbnail: 'src/assets/Project Thumbnail/EMS_Java_Swing.jpg',
       screenshots: [
-        'src/assets/Project Thumbnail/EMS_Java_Swing.jpg',
-        'src/assets/Project Thumbnail/Java_EMP.png',
-        'src/assets/Project Thumbnail/EMS_Java_Swing.jpg',
-        'src/assets/Project Thumbnail/Java_EMP.png'
+        'src/assets/Project Screenshots/EMP_Java_swing (1).png',
+        'src/assets/Project Screenshots/EMP_Java_swing (2).png',
+        'src/assets/Project Screenshots/EMP_Java_swing (3).png',
+        'src/assets/Project Screenshots/EMP_Java_swing (4).png',
+        'src/assets/Project Screenshots/EMP_Java_swing (5).png',
+        'src/assets/Project Screenshots/EMP_Java_swing (6).png'
       ],
       features: ['GUI Interface', 'MySQL Integration', 'Add/Edit/Delete Records', 'View Employee Profiles', 'Dual-view Login', 'Role-based Access', 'Data Validation', 'Search & Filter'],
       stats: { stars: 256, views: 4520 }
@@ -105,6 +129,29 @@ function ProjectsExpanded({ onClose }) {
         'src/assets/Project Thumbnail/2D_C.png'
       ],
       features: ['Two-team Simulation', 'AI Decision Making', 'Real-time 2D Graphics', 'A* Pathfinding', 'Ball Physics', 'Collision Detection', 'Interactive Controls', 'Educational Tool'],
+      stats: { stars: 203, views: 4120 }
+    },
+    {
+      title: 'Archive portfolio websites',
+      description: 'Evolution of my personal portfolio websites showcasing my skills and projects over time.',
+      fullDescription: 'Here are my previous portfolio websites that I have created over time to showcase my skills, projects, and experiences. Each version reflects my growth as a developer and designer, incorporating new technologies and design trends. These portfolios serve as a testament to my journey in the tech world, highlighting my commitment to continuous learning and improvement.',
+      projects: [
+        { name: 'RocketFlow', link: 'https://beta.rocketflow.biz/' },
+        { name: 'SmeCube', link: 'https://smecube.com/' },
+        { name: "Let's Print", link: '#' }
+      ],
+      tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'React', 'Tailwind CSS'],
+      icon: <HiCloud size={32} />,
+      color: '#06b6d4',
+      github: 'https://github.com/sanjid191',
+      live: 'https://github.com/sanjid191',
+      featured: false,
+      thumbnail: 'src/assets/Project Thumbnail/Aechive_web.png',
+      screenshots: [
+        'src/assets/Project Screenshots/PW1.png',
+        'src/assets/Project Screenshots/PW2.png'
+      ],
+      features: ['Version 1: Basic HTML/CSS', 'Version 2: Bootstrap Integration',  'Version 3: React Implementation','Tailwind CSS Styling', 'Responsive Design', 'Project Showcases', 'Contact Information'],
       stats: { stars: 203, views: 4120 }
     }
   ]
