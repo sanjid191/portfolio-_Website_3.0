@@ -8,7 +8,7 @@ function SkillsCard({ onClick }) {
       </div>
       <h2 className="card-title">Skills</h2>
       <p className="card-preview">
-        React • JavaScript • CSS • UI/UX
+        React • JavaScript • Java Springboot • SQA
       </p>
       <span className="card-hint">Click to explore →</span>
     </div>

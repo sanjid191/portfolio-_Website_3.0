@@ -230,7 +230,9 @@ body::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: #000000;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
   z-index: 1000;
   display: flex;
   justify-content: center;
@@ -280,16 +282,19 @@ body::before {
   max-width: 1400px;
   max-height: 95vh;
   overflow-y: auto;
-  background: #000000;
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-radius: 3px;
   padding: 60px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   z-index: 1;
   box-shadow: 
-    0 0 0 1px rgba(255, 255, 255, 0.05),
-    inset 0 0 50px rgba(255, 255, 255, 0.01);
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 25px 80px rgba(0, 0, 0, 0.8),
+    inset 0 0 50px rgba(255, 255, 255, 0.02);
 }
 
 /* Wider layout specifically for Resume */
