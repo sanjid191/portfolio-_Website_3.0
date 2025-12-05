@@ -8,7 +8,7 @@ function SkillsExpanded({ onClose }) {
       description: 'Core languages for building robust logic.',
       icon: <HiCodeBracket size={40} />,
       iconColor: '#00d4ff',
-      skills: ['Java', 'C', 'JavaScript', 'Python', 'Dart']
+      skills: ['Java', 'C', 'JavaScript', 'Python']
     },
     {
       title: 'Web Technologies',
@@ -32,11 +32,18 @@ function SkillsExpanded({ onClose }) {
       skills: ['Selenium', 'Postman', 'Jira', 'TestNG', 'JUnit']
     },
     {
-      title: 'Tools & Others',
+      title: 'Testing Skills',
+      description: 'Ensuring software quality and reliability.',
+      icon: <HiWrenchScrewdriver size={40} />,
+      iconColor: '#22c55e',
+      skills: ['Manual Testing', 'Automation Testing', 'UI Testing', 'API Testing', 'Load Performance Testing']
+    },
+    {
+      title: 'Other Tools',
       description: 'Essential tools for development workflow.',
       icon: <HiCog6Tooth size={40} />,
       iconColor: '#ec4899',
-      skills: ['Git', 'GitHub', 'VS Code', 'IntelliJ IDEA', 'Android Studio', 'Figma']
+      skills: ['Git', 'GitHub', 'VS Code', 'IntelliJ IDEA', 'Figma', 'LaTeX','Docker','AutoCAD']
     }
   ]
 

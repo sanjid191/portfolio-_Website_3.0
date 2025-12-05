@@ -67,9 +67,7 @@ function HeroExpanded({ onClose }) {
             </div>
 
             <p className="hero-bio">
-              A passionate developer crafting beautiful digital experiences. I specialize in building 
-              modern web applications with cutting-edge technologies, transforming complex ideas into 
-              elegant, user-friendly solutions.
+              a CSE undergraduate and aspiring software engineer with skills in web development, QA, and modern software tools. I work with Java, JavaScript, React, Node.js, and MySQL, and I'm actively building my expertise in Software Quality Assurance, including manual testing, API testing, and tools like Selenium, Postman, Jira, TestNG, and JUnit. I also have strong leadership experience through roles in campus organizations, including BASIS Students' Forum, Hult Prize and CETL, where I managed events, teams, and technical operations.
             </p>
 
             <div className="hero-highlights">

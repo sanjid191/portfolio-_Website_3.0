@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { HiAcademicCap, HiTrophy, HiMicrophone, HiUserGroup, HiStar, HiCheckBadge, HiXMark, HiChevronLeft, HiChevronRight, HiCamera } from 'react-icons/hi2'
 import { FaAward } from 'react-icons/fa'
+import { HiArrowLeft } from 'react-icons/hi'
 
 function CertificatesExpanded({ onClose }) {
   const [selectedCert, setSelectedCert] = useState(null)
@@ -9,154 +10,156 @@ function CertificatesExpanded({ onClose }) {
 
   const certificates = [
     {
-      title: 'Full Stack Web Development',
-      issuer: 'Meta (Coursera)',
-      date: 'December 2023',
-      credential: 'Credential ID: XXXXX',
+      //Java Edge Certificate
+      title: ' Advanced Java Programming, Enhancing Digital Government and Economy (EDGE)',
+      issuer: 'Green University of Bangladesh',
+      date: 'October 2024',
+      credential: '80+ Hours',
       color: '#667eea',
-      image: 'https://picsum.photos/800/600?random=1'
+      image: 'src/assets/certificates/EDGE.png'
     },
     {
-      title: 'JavaScript Algorithms & Data Structures',
-      issuer: 'freeCodeCamp',
-      date: 'August 2023',
-      credential: '300+ Hours',
+      //programming hero certificate
+      title: 'Complete web development course, Programming Hero',
+      issuer: 'Programming Hero',
+      date: 'Janumary 2022',
+      credential: 'Certificate of Completion',
       color: '#10b981',
       image: 'https://picsum.photos/800/600?random=2'
     },
     {
-      title: 'React - The Complete Guide',
-      issuer: 'Udemy',
-      date: 'June 2023',
+      //digital literacy certificate
+      title: ' Digital literacy course for Youth',
+      issuer: 'ICT Devision, Bangladesh Government',
+      date: 'September 2022',
       credential: 'Certificate of Completion',
       color: '#f59e0b',
-      image: 'https://picsum.photos/800/600?random=3'
+      image: 'src/assets/certificates/Digital_lit.png'
     },
     {
-      title: 'MongoDB Certified Developer',
-      issuer: 'MongoDB University',
-      date: 'March 2023',
-      credential: 'Professional Certification',
+      //BSF certificate
+      title: 'Executive Member, BASIS Student Forum GUB Chapter',
+      issuer: 'BASIS Student Forum GUB Chapter',
+      date: '2023-2024',
+      credential: 'Certificate of Appreciation',
       color: '#22c55e',
-      image: 'https://picsum.photos/800/600?random=4'
+      image: 'src/assets/certificates/Executive_bsf.jpg'
     },
     {
-      title: 'UI/UX Design Specialization',
-      issuer: 'CalArts (Coursera)',
-      date: 'January 2023',
-      credential: '4-Course Specialization',
+      //hult oc event manager
+      title: 'Head of Project Management, Hult Prize OC, GUB',
+      issuer: 'Hult Prize Organization',
+      date: '2024',
+      credential: 'Event Manager',
       color: '#ec4899',
-      image: 'https://picsum.photos/800/600?random=5'
+      image: 'src/assets/certificates/Hult_OC_Project manager.jpg'
     },
     {
-      title: 'AWS Cloud Practitioner',
-      issuer: 'Amazon Web Services',
-      date: 'November 2022',
-      credential: 'CLF-C01',
-      color: '#f97316',
-      image: 'https://picsum.photos/800/600?random=6'
+      //hult oc logidtic
+      title: 'Executive of Logistics, Hult Prize OC, GUB',
+      issuer: 'Hult Prize Organization',
+      date: '2023',
+      credential: 'Executive of Logistics',
+      color: '#ec4899',
+      image: 'src/assets/certificates/Hult_OC_Logistic.jpg'
     }
   ]
 
   const moments = [
     {
-      title: 'Hackathon Victory 2023',
-      date: 'October 2023',
-      location: 'Tech Hub Dhaka',
-      description: 'Won 1st place in the national coding championship with an innovative AI-powered solution for healthcare accessibility.',
+      title: 'CSE CSE Carnival 2024',
+      date: 'November 2024',
+      location: 'Green University of Bangladesh',
+      description: 'Lead Member of Sponsorship Team for the annual CSE Carnival, successfully securing 2 sponsorships and coordinating with multiple vendors to ensure a smooth event execution. Also give suport as organizer in various tasks during the event.',
       images: [
-        'https://picsum.photos/800/600?random=10',
-        'https://picsum.photos/800/600?random=11',
-        'https://picsum.photos/800/600?random=12',
-        'https://picsum.photos/800/600?random=13'
+        'src/assets/Events/CSE_C24 (1).jpg',
+        'src/assets/Events/CSE_C24 (2).jpg',
+        'src/assets/Events/CSE_C24 (3).jpg',
+        'src/assets/Events/CSE_C24 (4).jpg',
+        'src/assets/Events/CSE_C24 (5).jpg',
+        'src/assets/Events/CSE_C24 (6).jpg',
+        'src/assets/Events/CSE_C24 (7).jpg'
+        
       ],
-      thumbnail: 'https://picsum.photos/400/300?random=10'
+      thumbnail: 'src/assets/Events/CSE_C.jpg'
     },
     {
-      title: 'Tech Summit Speaker',
-      date: 'July 2024',
-      location: 'International Convention Center',
-      description: 'Delivered a keynote speech on "The Future of Web Development" to an audience of 500+ developers and industry professionals.',
+      title: 'Orientation Program',
+      date: '2024, 2025',
+      location: 'Green University of Bangladesh',
+      description: 'Active Member of the Orientation Program Committee for welcoming new students, organizing various activities and sessions to help them acclimate to university life.',
       images: [
-        'https://picsum.photos/800/600?random=14',
-        'https://picsum.photos/800/600?random=15',
-        'https://picsum.photos/800/600?random=16'
+        'src/assets/Events/Orientation (1).jpg',
+        'src/assets/Events/Orientation (2).jpg',
+        'src/assets/Events/Orientation (3).jpg'
       ],
-      thumbnail: 'https://picsum.photos/400/300?random=14'
+      thumbnail: 'src/assets/Events/Orientation (2).jpg'
     },
     {
-      title: 'Community Meetup Lead',
-      date: 'March 2024',
+      title: 'Hult Battle 05',
+      date: 'Febuary 2025',
       location: 'Developer Hub',
-      description: 'Organized and led a developer community meetup focusing on React best practices and modern web development trends.',
+      description: 'Organized and led Hult Battle event, coordinating logistics, marketing, and participant engagement to ensure a successful competition with over 50 participants.',
       images: [
-        'https://picsum.photos/800/600?random=17',
-        'https://picsum.photos/800/600?random=18'
+        'src/assets/Events/HULT_P_25 (1).jpg',
+        'src/assets/Events/HULT_P_25 (2).jpg',
+        'src/assets/Events/HULT_P_25 (3).jpg'
       ],
-      thumbnail: 'https://picsum.photos/400/300?random=17'
+      thumbnail: 'src/assets/Events/HULT_P_25 (1).jpg'
     },
     {
-      title: 'Open Source Celebration',
-      date: 'January 2024',
-      location: 'GitHub Universe Event',
-      description: 'Recognized for outstanding contributions to open source projects, reaching 100+ contributions milestone.',
+      title: 'NAT Test',
+      date: '2024-25',
+      location: 'Green University of Bangladesh',
+      description: 'Conducted the National Aptitude Test (NAT) as assistant coordinator, managing test logistics and ensuring a smooth experience for over 200 participants.',
       images: [
-        'https://picsum.photos/800/600?random=19',
-        'https://picsum.photos/800/600?random=20',
-        'https://picsum.photos/800/600?random=21'
+        'src/assets/Events/NAT_Test (1).jpg',
+        'src/assets/Events/NAT_Test (2).jpg',
+        'src/assets/Events/NAT_Test (3).jpg',
+        'src/assets/Events/NAT_Test (4).jpg'
       ],
-      thumbnail: 'https://picsum.photos/400/300?random=19'
+      thumbnail: 'src/assets/Events/NAT_Test (4).jpg'
     },
     {
-      title: 'Workshop Facilitator',
-      date: 'November 2023',
+      title: 'Teaches day clebration',
+      date: '2025',
       location: 'University Campus',
-      description: 'Conducted a hands-on workshop on building full-stack applications for 100+ university students.',
+      description: 'Organized Teachers Day celebration event, coordinating activities, decorations, and refreshments to honor faculty members and create a memorable experience.',
       images: [
-        'https://picsum.photos/800/600?random=22',
-        'https://picsum.photos/800/600?random=23'
+        'src/assets/Events/Teachers_Day (1).jpg',
+        'src/assets/Events/Teachers_Day (2).jpg',
+        'src/assets/Events/Teachers_Day (3).jpg'
       ],
-      thumbnail: 'https://picsum.photos/400/300?random=22'
+      thumbnail: 'src/assets/Events/Teachers_Day (1).jpg'
     },
     {
-      title: 'Award Ceremony',
-      date: 'December 2023',
-      location: 'Tech Excellence Awards',
-      description: 'Received the "Rising Developer of the Year" award at the annual technology excellence ceremony.',
+      title: 'Teachers Training by CETL',
+      date: '2025',
+      location: 'Green University of Bangladesh',
+      description: 'Organize and give technical support for Teachers Training program conducted by CETL, ensuring smooth operation of training sessions and providing technical assistance to participants.',
       images: [
-        'https://picsum.photos/800/600?random=24',
-        'https://picsum.photos/800/600?random=25',
-        'https://picsum.photos/800/600?random=26'
+        'src/assets/Events/Teachers_Training (1).jpg',
+        'src/assets/Events/Teachers_Training (2).jpg',
+        'src/assets/Events/Teachers_Training (3).jpg'
       ],
-      thumbnail: 'https://picsum.photos/400/300?random=24'
+      thumbnail: 'src/assets/Events/Teachers_Training (1).jpg'
     }
   ]
 
   const achievements = [
     {
-      icon: <HiTrophy size={28} />,
-      title: 'Hackathon Winner',
-      description: '1st Place - Code Challenge 2023',
+      icon: <HiStar size={28} />,
+      title: 'Student Leader',
+      description: 'Lead various student organizations on campus.',
       color: '#fbbf24'
     },
     {
       icon: <HiMicrophone size={28} />,
-      title: 'Tech Speaker',
-      description: 'National Tech Summit 2024',
+      title: 'Speaker',
+      description: 'Delivered talks and presentations at various events.',
       color: '#a855f7'
-    },
-    {
-      icon: <HiUserGroup size={28} />,
-      title: 'Community Leader',
-      description: '500+ Developer Community',
-      color: '#06b6d4'
-    },
-    {
-      icon: <HiStar size={28} />,
-      title: 'Open Source',
-      description: '100+ GitHub Contributions',
-      color: '#10b981'
     }
+    
   ]
 
   const openCertificate = (cert) => {
